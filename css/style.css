@@ -193,7 +193,7 @@ header{
 
   /* Navbar */
 
-  header{
+  body > header{
     flex-direction: row;
     justify-content: space-between;
   }
@@ -221,7 +221,6 @@ header{
 
   html, body {
     /*get everything to fit on one page */
-    height: 60%;
 
     /*enforce color printing*/
     color-adjust: exact;
@@ -231,6 +230,13 @@ header{
 
   .pricing {
     align-items: flex-start;
+  }
+
+  footer {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
   }
 
   .card {
