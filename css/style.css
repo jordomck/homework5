@@ -139,10 +139,10 @@ Keyframes for animation*/
 /* Gallery! */
 
 .gallery{
-  min-height: 600px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-content: center;
 }
 
 .gallery > img{
@@ -219,6 +219,16 @@ header{
     background-image: none;
   }
 
+  html, body {
+    /*get everything to fit on one page */
+    height: 60%;
+
+    /*enforce color printing*/
+    color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
   .pricing {
     align-items: flex-start;
   }
@@ -228,7 +238,7 @@ header{
   }
 
   #gallery, .gallery {
-    visibility: hidden;
+    display: none;
   }
 
 }
